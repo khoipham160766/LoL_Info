@@ -4,3 +4,4 @@ Link lấy API: https://developer.riotgames.com/docs/lol
 ### Champ info
 ![info_champ_1](https://user-images.githubusercontent.com/82496203/185730072-7761f192-53c8-44fd-a294-cf38979975e4.png)
 ![info_champ_2](https://user-images.githubusercontent.com/82496203/185730075-668f26ee-8288-48e1-b7f5-81ad9fce04a4.png)
+![info_champ_3](https://user-images.githubusercontent.com/82496203/185730107-e193150e-c856-4201-8554-a3bc6f01e687.png)
