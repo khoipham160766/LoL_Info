@@ -1,7 +1,6 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import './App.css';
-import Header from './components/Header';
 import Listchamps from './components/Listchamps';
 
 function App() {
@@ -30,8 +29,7 @@ function App() {
   }
   return (
     <div className="App">
-      <Header/>
-      <div className="h-screen-content bg-slate-800 float-left">
+      <div className="h-full bg-slate-800 float-left">
         <Listchamps listChamp={ListChamp}/>
       </div>
     </div>
