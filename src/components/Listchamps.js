@@ -8,7 +8,7 @@ const Listchamps = props => {
             <div className="float-left">
                 {
                     listChamp.map((champ,index) => (
-                        <Cartchamp id={champ.id} key={index} datachamp={champ}/>
+                        <Cartchamp id={champ.id} key={index} datachamp={champ} />
                     ))
                 }
             </div>

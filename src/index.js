@@ -5,6 +5,8 @@ import './index.css';
 import App from './App';
 import Header from './components/Header';
 import InfoChamp from './components/InfoChamp';
+import Items from './pages/Items';
+import Spells from './pages/Spells';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,6 +17,8 @@ root.render(
       <Routes>
         <Route path="/" element={<App/>}/>
         <Route path="/championinfo/:id" element={<InfoChamp/>}/>
+        <Route path="/items" element={<Items/>}/>
+        <Route path="/spells" element={<Spells/>}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

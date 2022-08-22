@@ -25,7 +25,10 @@ const InfoChamp = () => {
                                         alt={datachamp.id}
                                         className="float-left"
                                     />
-                                    <p className="ml-4 float-left text-white text-xl">( Nội tại ) {datachamp.passive.name}</p>
+                                    <div className="float-left w-[80%]">
+                                        <p className="w-full ml-4 float-left text-white text-xl">( Nội tại ) {datachamp.passive.name}</p>
+                                        <div className="ml-4 text-white float-left" dangerouslySetInnerHTML={{__html: datachamp.passive.description}}></div>
+                                    </div>
                                 </div>
                                 {
                                     datachamp.spells.map((spell, index) => (
