@@ -1,1 +1,9 @@
-
+.info-item{
+    display: none;
+}
+.info-item-active{
+    display: block;
+    position: absolute;
+    z-index: 1;
+    margin-top: 100px;
+}

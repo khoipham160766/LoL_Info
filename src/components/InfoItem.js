@@ -5,11 +5,12 @@ const InfoItem = props =>{
     const tooltip_into_item = (name) =>{
         return props.listItem[name].name;
     };
+    console.log(props.hiddenInfo)
     return(
         <Fragment>
-            <div className="float-left h-[550px] inline-block w-[400px] 
+            <div className={`${props.hiddenInfo?"info-item-active":"info-item"} float-left inline-block w-[270px] 
                                         border-solid border-yellow-400 border-2 
-                                        m-[26px] cursor-pointer bg-slate-900 pl-3" 
+                                        cursor-pointer bg-slate-900 pl-3`} 
             >
                 <h1 className="description text-blue-400 w-full mt-1 text-[17px] font-bold">Miêu tả:</h1>
                 <div className="description-content text-white" dangerouslySetInnerHTML={{__html: props.dataItem.plaintext }}></div>
