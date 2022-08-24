@@ -2,7 +2,7 @@
 - https://developer.riotgames.com/docs/lol
 ### Chức năng tìm kiếm thông tin người chơi:
 - API chỉ mới cung cấp khả năng tìm kiếm trên một vài khu vực, chưa có VN trong đó.
-- Do key mà Riot Developer Portal cung cấp cho 1 account chỉ có thời hạn hay ngày nên chức năng chỉ xài được 2 ngày kể từ lúc project complete, muốn típ tục xài chức năng thì phải thay key trong src/pages/SearchPlayer.js
+- Do key mà Riot Developer Portal cung cấp cho 1 account chỉ có thời hạn 2 ngày nên chức năng chỉ xài được 2 ngày kể từ lúc project complete, muốn típ tục xài chức năng thì phải thay key trong src/pages/SearchPlayer.js
 ### Tướng:
 ![listchamp_1](https://user-images.githubusercontent.com/82496203/186479391-9587580a-e5b8-4405-be7f-6caf6c1fc484.png)
 ![listchamp_2](https://user-images.githubusercontent.com/82496203/186479401-b190df54-af0c-4c1d-8fd5-2e6ceaa4cc03.png)
