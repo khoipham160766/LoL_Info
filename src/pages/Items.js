@@ -14,7 +14,7 @@ const Items = () => {
         const response = await axios.get("https://ddragon.leagueoflegends.com/cdn/12.15.1/data/vn_VN/item.json");
         setItems(Object.entries(response.data.data));
     }
-     console.log(Items);
+    // console.log(Items);
     // console.log(ItemID);
     //search item
     const handleSearch = (e) =>{

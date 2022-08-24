@@ -8,6 +8,7 @@ import InfoChamp from './components/Champs/InfoChamp';
 import Items from './pages/Items';
 import Spells from './pages/Spells';
 import Icons from './pages/Icons';
+import SearchPlayer from './pages/SearchPlayer';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,6 +22,7 @@ root.render(
         <Route path="/items" element={<Items/>}/>
         <Route path="/spells" element={<Spells/>}/>
         <Route path="/icons"  element={<Icons/>}/>
+        <Route path="/search-player" element={<SearchPlayer/>}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
