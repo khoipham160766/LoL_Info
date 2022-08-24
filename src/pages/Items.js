@@ -1,36 +1,53 @@
 import React, { Fragment, useEffect, useState } from "react";
 import axios from "axios";
-import Item from "../components/Item";
+import Item from "../components/Items/Item";
+import Search from "antd/lib/input/Search";
 
 const Items = () => {
     const [Items, setItems] = useState([]);
-    const [ItemID, setItemID] = useState([]);
+    const [Seacrh, setSearch] = useState([]);
+    const [Check, setCheck] = useState(false);
     useEffect(()=>{
         getItems();
-        getItemID();
     },[]);
     const getItems = async() =>{
         const response = await axios.get("https://ddragon.leagueoflegends.com/cdn/12.15.1/data/vn_VN/item.json");
-        setItems(response.data.data);
+        setItems(Object.entries(response.data.data));
     }
-    const getItemID = async() => {
-        const response = await axios.get("https://ddragon.leagueoflegends.com/cdn/12.15.1/data/vn_VN/item.json");
-        setItemID(Object.keys(response.data.data));
+     console.log(Items);
+    // console.log(ItemID);
+    //search item
+    const handleSearch = (e) =>{
+        setCheck(true);
+        const searchItem = [];
+        Items.map(id =>(
+            ((id[1].name.toUpperCase()).includes(e.target.value.toUpperCase()))?searchItem.push(id):null
+        ))
+        setSearch(searchItem);
     }
-    console.log(Items);
-    console.log(ItemID);
     return(
         <Fragment>
-            <div className="App h-full">
+            <div className="App float-left m-h-[150%]">
+                <div className="bg-slate-800 float-left w-full">
+                    <Search placeholder="Nhập tên trang bị..."  
+                            className="w-[380px] float-left p-4 pl-[30px]" 
+                            onChange={handleSearch}
+                    />
+                </div>
                 <div className="w-full h-full bg-slate-800 float-left">
                   {
-                    ItemID.map(id=>(
-                        (Items[id].description === "")?
+                    (Seacrh.length === 0 && Check)?
+                        <h1 className="text-white float-left text-2xl text-center ml-[30px]">KHÔNG TÌM THẤY KẾT QUẢ.</h1>
+                    :
+                    ((Check)?Seacrh:Items).map(id=>(
+                        (id[1].description === "")?
                         ""
                         :
-                        <Item dataItem={Items[id]} 
+                        <Item dataItem={id}
                               listItem={Items}
-                              key={id} 
+                              listItemSearch={Seacrh}
+                              check={Check}
+                              key={id[0]} 
                         />
                     ))
                   }

@@ -4,9 +4,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import Header from './components/Header';
-import InfoChamp from './components/InfoChamp';
+import InfoChamp from './components/Champs/InfoChamp';
 import Items from './pages/Items';
 import Spells from './pages/Spells';
+import Icons from './pages/Icons';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -19,6 +20,7 @@ root.render(
         <Route path="/championinfo/:id" element={<InfoChamp/>}/>
         <Route path="/items" element={<Items/>}/>
         <Route path="/spells" element={<Spells/>}/>
+        <Route path="/icons"  element={<Icons/>}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

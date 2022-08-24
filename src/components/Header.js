@@ -18,6 +18,7 @@ const Header = () => {
                         <li className="inline-block p-4 cursor-pointer"><Link to="/" className="hover:text-white">TƯỚNG</Link></li>
                         <li className="inline-block p-4 cursor-pointer"><Link to="/items" className="hover:text-white">TRANG BỊ</Link></li>
                         <li className="inline-block p-4 cursor-pointer"><Link to="/spells" className="hover:text-white">PHÉP BỔ TRỢ</Link></li>
+                        {/* <li className="inline-block p-4 cursor-pointer"><Link to="/icons" className="hover:text-white">BIỂU TƯỢNG</Link></li> */}
                         <li className="inline-block p-4 cursor-pointer"><Link to="/" className="hover:text-white">TÌM KIẾM NGƯỜI CHƠI</Link></li>
                     </ul>
                 </div>
