@@ -1,7 +1,16 @@
-Link lấy API: https://developer.riotgames.com/docs/lol
-### ListChamp
-![listchamp](https://user-images.githubusercontent.com/82496203/185730043-7c6d5384-dbe0-44a3-b706-396a53ed0cbd.png)
-### Champ info
-![info_champ_1](https://user-images.githubusercontent.com/82496203/185730072-7761f192-53c8-44fd-a294-cf38979975e4.png)
-![info_champ_2](https://user-images.githubusercontent.com/82496203/185730075-668f26ee-8288-48e1-b7f5-81ad9fce04a4.png)
-![info_champ_3](https://user-images.githubusercontent.com/82496203/185730107-e193150e-c856-4201-8554-a3bc6f01e687.png)
+### Link lấy API: 
+- https://developer.riotgames.com/docs/lol
+### Chức năng tìm kiếm thông tin người chơi:
+- API chỉ mới cung cấp khả năng tìm kiếm trên một vài khu vực, chưa có VN trong đó.
+- Do key mà Riot Developer Portal cung cấp cho 1 account chỉ có thời hạn hay ngày nên chức năng chỉ xài được 2 ngày kể từ lúc project complete, muốn típ tục xài chức năng thì phải thay key trong src/pages/SearchPlayer.js
+### Tướng:
+![listchamp_1](https://user-images.githubusercontent.com/82496203/186479391-9587580a-e5b8-4405-be7f-6caf6c1fc484.png)
+![listchamp_2](https://user-images.githubusercontent.com/82496203/186479401-b190df54-af0c-4c1d-8fd5-2e6ceaa4cc03.png)
+![listchamp_3](https://user-images.githubusercontent.com/82496203/186479415-10e17bab-f7a8-4cdd-9bd1-aed3e493b1a3.png)
+![info_champ_1](https://user-images.githubusercontent.com/82496203/186479464-5f293a5f-4dca-4637-a906-f87f9ad9ed72.png)
+![info_champ_2](https://user-images.githubusercontent.com/82496203/186479470-b2ec4602-5a69-4f2f-91ee-328b0956e633.png)
+### Trang bị:
+![item_1](https://user-images.githubusercontent.com/82496203/186479535-290382ea-7d37-40fe-ae57-fe2e7b7df680.png)
+![item_2](https://user-images.githubusercontent.com/82496203/186479549-5a5f44e6-6e68-40d6-9e17-e1799be4a516.png)
+### Phép bổ trợ:
+![spell](https://user-images.githubusercontent.com/82496203/186479573-b0594ede-f2fd-44d0-be87-f67a59d8694a.png)
