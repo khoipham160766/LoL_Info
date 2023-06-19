@@ -40,6 +40,7 @@ function App() {
     ))
     setSearch(searchChamp);
   }
+  console.log(ListChamp);
   return (
     <div className="App">
       <div className="h-full bg-slate-800 float-left">
